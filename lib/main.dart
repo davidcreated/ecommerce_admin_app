@@ -1,6 +1,15 @@
+import 'package:ecommerce_admin_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+
+  // Todo : Add Widgets binding to ensure that the framework is initialized before running the app
+  // Todo : Init local storage or any other services if needed
+  // Todo : Await Native Splash Screen if using it
+  // Todo: Iniitalize any services like Firebase, Hive, etc.
+  // Todo:  Initialize Authentication
+ 
+ 
   runApp(const MainApp());
 }
 
@@ -9,12 +18,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      themeMode: ThemeMode.system, // Use system theme mode
+      debugShowCheckedModeBanner: false, // Hide debug banner
+      theme:  TAppTheme.lightTheme, // Light theme
+      darkTheme: TAppTheme.darkTheme, // Dark theme
+     
     );
   }
 }

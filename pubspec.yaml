@@ -10,6 +10,22 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # icons 
+  iconsax: ^0.0.8
+
+
+  cupertino_icons: ^1.0.8  
+
+  # State management
+  provider: ^6.1.5
+  get: ^4.7.2
+
+  # Utility Packages
+  http: 
+  intl:
+  logger:
+  url_launcher:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +33,29 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/vectors/
+    - assets/fonts/
+  # Add custom fonts
+  # https://flutter.dev/custom-fonts/#using-custom-fonts-in-flutter-applications
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          style: italic
+          weight: 500
+        
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
